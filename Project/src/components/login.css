@@ -1,0 +1,119 @@
+
+
+.Login {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    width: 380px;
+    height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+    display:flex;
+    min-height: 70vh;
+    z-index: 3;
+}
+.Login::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg, transparent, mediumpurple, mediumpurple);
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+}
+.Login::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg, transparent, mediumpurple, mediumpurple);
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+    animation-delay: -4s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+    transform: rotate(360deg);
+    }
+}
+.login-form {
+    position:absolute;
+    inset: 2px;
+    border-radius: 8px;
+    z-index: 10;
+    background: aliceblue;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    color: #61dafb;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.inputbox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.inputbox input {
+    position:relative;
+    width: 80%;
+    padding: 20px;
+    background: transparent;
+    color: #61dafb;
+    font-size: 1em;
+    letter-spacing: 0.06em;
+    border: 1px solid;
+    border-radius: 8px;
+    outline: #61dafb;
+
+}
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: black;
+    pointer-events: none;
+    letter-spacing: 0.06em;
+    transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+    color: #61dafb;
+    transform: translateY(-34px);
+    font-size: 0.75em;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+.links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: grey;
+    text-decoration: none;
+}
+
+.loginbtn {
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #61dafb;
+    font-weight: bold;
+}

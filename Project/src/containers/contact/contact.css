@@ -1,0 +1,30 @@
+div.App-contact {
+}
+
+.fotogente1 {
+    display: none;
+}
+
+.grid-div div {
+    display:flex;
+    display:
+}
+.column-div div {
+    display:column;
+}
+
+
+.contact-form h2  {;
+    row-span: 2;
+    grid-gap: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.contact-form div  {
+    display: grid;
+    grid: 1px;
+    grid-gap: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+}

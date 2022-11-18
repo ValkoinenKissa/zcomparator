@@ -1,0 +1,80 @@
+div.App-home
+{
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+
+.zapatillat {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.zapatillat h1{
+    color: gray;
+    background-color: black;
+    border-radius: 3px;
+    padding: 12px;
+    letter-spacing: 0.2rem;
+}
+
+div h1:hover, div h1:active
+{
+    background: aliceblue;
+    color: black;
+}
+
+.ZapatillasBg {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    min-height: 100vh;
+
+}
+
+.zapatillai1 {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    background-color: #333333 ;
+}
+.zapatillai2 {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    background-color: grey;
+}
+.zapatillai3 {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    z-index: 0;
+    background-color: gainsboro;
+
+}
+.zapatillai4 {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    z-index: 0;
+    background-color: aliceblue;
+
+}
+.zapatillai5 {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    z-index: 0;
+    background-color: white;
+
+}
